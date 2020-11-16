@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-anf-trident
+  labels:
+    app: nginx-anf-trident
+    deploymethod: trident
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx-anf-trident
+  template:
+    metadata:
+      labels:
+        app: nginx-anf-trident
+        deploymethod: trident
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.14.2
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - name: disk01
+          mountPath: /usr/share/nginx/html
+      volumes:
+      - name: disk01
+        persistentVolumeClaim:
+          claimName: azurenetappfiles
