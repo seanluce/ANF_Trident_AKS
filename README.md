@@ -1,2 +1,2 @@
 # ANF_Trident_AKS
-Supporting resource for ANF, AKS, and Trident Blog Post
+Configuration files for Azure NetApp Files, Trident, and AKS.

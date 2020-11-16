@@ -1,0 +1,18 @@
+{
+    "version": 1,
+    "storageDriverName": "azure-netapp-files",
+    "subscriptionID": "",
+    "tenantID": "",
+    "clientID": "",
+    "clientSecret": "",
+    "location": "eastus2",
+    "serviceLevel": "Standard",
+    "virtualNetwork": "",
+    "subnet": "",
+    "nfsMountOptions": "vers=3,proto=tcp,timeo=600",
+    "limitVolumeSize": "500Gi",
+    "defaults": {
+        "exportRule": "0.0.0.0/0",
+        "size": "200Gi"
+    }
+}
