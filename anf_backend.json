@@ -5,14 +5,19 @@
     "tenantID": "",
     "clientID": "",
     "clientSecret": "",
-    "location": "",
-    "serviceLevel": "",
+    "location": "eastus2",
+    "serviceLevel": "Standard",
+    "capacityPools": [
+        "contoso.rg/eastus2-account/eastus2-pool"
+    ],
     "virtualNetwork": "",
-    "subnet": "",
+    "subnet": "anf-subnet",
+    "networkFeatures": "Standard",
     "nfsMountOptions": "vers=3,proto=tcp,timeo=600",
     "limitVolumeSize": "500Gi",
     "defaults": {
         "exportRule": "0.0.0.0/0",
-        "size": "200Gi"
+        "size": "200Gi",
+        "unixPermissions": "0755"
     }
 }
