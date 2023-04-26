@@ -56,7 +56,7 @@ kubectl apply -f anf_sc.yaml
 kubectl apply -f anf_pvc.yaml
 ```
 
-10. Verify the Azure NetApp Files volumes was created
+10. Verify the Azure NetApp Files volume was created
 
 11. Create you NGINX deployment
 
